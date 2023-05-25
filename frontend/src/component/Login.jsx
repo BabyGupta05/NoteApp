@@ -10,7 +10,7 @@ const Login = () => {
     )
     const handleSubmit=async (e)=>{
       e.preventDefault();
-      const res=await axios.post('http://localhost:8080/user/login',loginData);
+      const res=await axios.post('https://lazy-gray-dog-tam.cyclic.app/user/login',loginData);
       console.log(res);
       localStorage.setItem("token",res.data.token);
       navigate('/notes');
@@ -19,8 +19,8 @@ const Login = () => {
     <div>
       <h3>Login</h3>
       <form className="form" onSubmit={handleSubmit}>
-        <input type="email" value={loginData.email} onChange={(e)=>setLoginData({...loginData,email:e.target.value})}/>
-        <input type="password" value={loginData.password} onChange={(e)=>setLoginData({...loginData,password:e.target.value})}/>
+        <input type="email" placeholder="Email" value={loginData.email} onChange={(e)=>setLoginData({...loginData,email:e.target.value})}/>
+        <input type="password" placeholder="Password" value={loginData.password} onChange={(e)=>setLoginData({...loginData,password:e.target.value})}/>
         <input type="submit" value="Login" />
         <span><Link to="/signup">please, signup here</Link></span>
       </form>

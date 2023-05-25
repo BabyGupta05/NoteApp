@@ -39,3 +39,9 @@ The list of notes will be displayed on the page, showing the date, heading, and 
 
 
 Feel free to modify the content and structure of the `README.md` file according to your project's needs.
+
+backend Delopyed link:
+https://lazy-gray-dog-tam.cyclic.app/
+
+frontend deployed link:
+https://frontend-alpha-seven-88.vercel.app
