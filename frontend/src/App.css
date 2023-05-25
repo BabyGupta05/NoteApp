@@ -1,0 +1,58 @@
+.header{
+  width: 100%;
+  height: 3.5rem;
+  background-color: aqua;
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin: auto;
+}
+.form >input{
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.form >input[type="submit"]{
+  background-color: aqua;
+  color: black;
+  
+}
+.form h3{
+  text-align: center;
+  margin: auto;
+}
+.containter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin: auto ;
+  padding : 0 1rem;
+}
+.containter button{
+  width: 20%;
+  padding: 0.5rem;
+  margin:auto  1rem;
+  background-color: aqua;
+  color: black;
+  border-radius: 0.3rem;
+}
+.view{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
